@@ -7,40 +7,35 @@
     public string $carreira;
     public float $altura;
  
+ public function __construct(int $idade, string $carreira) {
+    $this->idade = $idade;
+    $this -> carreira = $carreira;
+ }
+
 
 
 public function setNome (string $nome): void
 {
-   $this -> nome = $nome; 
+   $this ->nome = $nome; 
 
 }
 
 public function setIdade (int $idade): void
 {
-    $this -> idade = $idade;
+    $this ->idade = $idade;
 }
 
 public function setCarreira (string $carreira): void 
 {
-    $this -> carreira = $carreira;
+    $this ->carreira = $carreira;
 }
 
 public function setAltura (float $altura): void
 {
-    $this -> altura = $altura;
+    $this ->altura = $altura;
 }
 
 }
-
- $carol = new Pessoa();
- $carol -> setNome("carol");
- $carol -> setIdade(24);
- $carol -> setCarreira("Atendente Televendas");
- $carol ->setAltura(1.67);
-echo "Nome: " . $carol -> nome . "<br>"; 
-echo "Idade: " . $carol -> idade . "<br>";
-echo "Carreira: " . $carol -> carreira . "<br>";
-echo "Altura: " . $carol -> altura . "<br>";
 
 
 
